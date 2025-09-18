@@ -1,0 +1,24 @@
+
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{margin:0;background:#f4f6f8;color:#111;}
+.topbar{height:56px;background:#0b3b73;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 16px;}
+.brand{font-weight:700;}
+.logo{height:36px;width:36px;border-radius:6px;}
+.center-screen{height:calc(100vh - 56px);display:flex;align-items:center;justify-content:center;}
+.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);width:320px;text-align:center;}
+input{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #dcdcdc;}
+button{padding:10px 12px;border-radius:8px;border:0;background:#0b3b73;color:#fff;cursor:pointer;}
+.note{font-size:12px;color:#666;}
+.hidden{display:none;}
+#app{display:flex;height:calc(100vh - 56px);}
+.sidebar{width:300px;background:#fff;border-right:1px solid #e6e9ee;padding:12px;overflow:auto;}
+.sidebar-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.cases-list{list-style:none;padding:0;margin:0;}
+.cases-list li{padding:10px;border-radius:8px;margin-bottom:8px;border:1px solid #eef2f6;cursor:pointer;}
+.cases-list li.bottom-most{border:2px dashed #0b3b73;}
+.main{flex:1;padding:18px;overflow:auto;}
+.info{min-height:200px;}
+.modal{position:fixed;left:50%;top:40%;transform:translate(-50%,-40%);z-index:60;}
+.modal-card{width:360px;padding:18px;border-radius:10px;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,0.12);text-align:center;}
+.notif{position:relative;cursor:pointer;font-size:24px;padding:6px;}
+.badge{position:absolute;top:-6px;right:-6px;background:#d12f2f;color:#fff;padding:4px 7px;border-radius:999px;font-size:12px;}

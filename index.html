@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistem Kasus - Kepolisian</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">SISTEM KASUS</div>
+    <div class="top-right">
+      <img src="assets/kepolisian.png" alt="Logo Kepolisian" class="logo">
+    </div>
+  </div>
+
+  <div id="login-screen" class="center-screen">
+    <div class="card">
+      <h2>Login</h2>
+      <input id="email" placeholder="email@email.com" />
+      <input id="password" type="password" placeholder="password" />
+      <button id="loginBtn">Masuk</button>
+      <p class="note">Gunakan email yang berakhiran <code>@email.com</code></p>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button id="simulateNew" title="Simulate new case">+ Simulate New Case</button>
+        <div class="notif" id="notifBell">
+          <span id="bellBadge" class="badge hidden">0</span>
+          🔔
+        </div>
+      </div>
+      <ul id="casesList" class="cases-list"></ul>
+    </aside>
+
+    <main class="main">
+      <div id="welcomeModal" class="modal hidden">
+        <div class="modal-card">
+          <h3>Selamat Datang</h3>
+          <p>Selamat datang di sistem manajemen kasus. Data tersimpan aman.</p>
+          <button id="welcomeOk">Oke</button>
+        </div>
+      </div>
+
+      <div id="mainContent">
+        <h2 id="caseTitle">Dashboard</h2>
+        <div id="caseDetail" class="card info">
+          <p>Pilih sebuah kasus dari daftar di kiri atau klik notifikasi untuk melihat kasus baru.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
